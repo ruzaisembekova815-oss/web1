@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -16,5 +17,158 @@
     </ul>
   </nav>
 </header>
+
+<table>
+    <caption>Members</caption>
+    <thead>
+    <tr>
+      <th colspan="3" scope="colgroup">Name</th>
+      <th rowspan="2" scope="col">Position(s)</th>
+      <th rowspan="2" scope="col">Date of Birth</th>
+    </tr>
+    <tr>
+      <th scope="col">English</th>
+      <th scope="col">Korean</th>
+      <th scope="col">Japanese</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S.Coups</td>
+      <td>에스쿱스</td>
+      <td>エスクプス</td>
+      <td>Leader, Main Rapper, Vocalist, Center</td>
+      <td>August 8, 1995</td>
+    </tr>
+    <tr>
+      <td>Jeonghan</td>
+      <td>정한</td>
+      <td>ジョンハン</td>
+      <td>Lead Vocalist, Visual</td>
+      <td>October 4, 1995 </td>
+    </tr>
+    <tr>
+      <td>Joshua</td>
+      <td>조슈아</td>
+      <td>ジョシュア</td>
+      <td>Lead Vocalist, Visual</td>
+      <td>December 30, 1995 </td>
+    </tr>
+    <tr>
+      <td>Jun</td>
+      <td>준</td>
+      <td>ジュン</td>
+      <td>Lead Dancer, Vocalist</td>
+      <td>June 10, 1996</td>
+    </tr>
+    <tr>
+        <td>Hoshi</td>
+        <td>호시</td>
+        <td>ホシ</td>
+        <td>Performance Team Leader, Main Dancer, Lead Vocalist, Rapper</td>
+        <td>June 15, 1996 </td>
+    </tr>
+    <tr>
+      <td>Wonwoo</td>
+      <td>원우</td>
+      <td>ウォヌ</td>
+      <td>Lead Rapper, Vocalist</td>
+      <td>July 17, 1996 </td>
+    </tr>
+    <tr>
+      <td>Woozi</td>
+      <td>우지</td>
+      <td>ウジ</td>
+      <td>Vocal Team Leader, Lead Vocalist, Lead Dancer, Producer</td>
+      <td>November 22, 1996 </td>
+    </tr>
+    <tr>
+      <td>DK</td>
+      <td>도겸</td>
+      <td>ドギョム</td>
+      <td>Main Vocalist</td>
+      <td>February 18, 1997 </td>
+    </tr>
+    <tr>
+      <td>The8</td>
+      <td>디에잇</td>
+      <td>ディエイト</td>
+      <td>Lead Dancer, Vocalist, Rapper</td>
+      <td>November 7, 1997 </td>
+    </tr>
+    <tr>
+      <td>Mingyu</td>
+      <td>민규</td>
+      <td>ミンギュ</td>
+      <td>Lead Rapper, Vocalist, Visual</td>
+      <td>December 12, 1997</td>
+    </tr>
+    <tr>
+      <td>Seungkwan</td>
+      <td>승관</td>
+      <td>スングァン</td>
+      <td>Main Vocalist, Face of the Group</td>
+      <td>January 16, 1998 </td>
+    </tr>       
+    <tr>
+      <td>Vernon</td>
+      <td>버논</td>
+      <td>バーノン</td>
+      <td>Main Rapper, Vocalist, Visual</td>
+      <td>February 18, 1998 </td> 
+    </tr>
+    <tr>
+      <td>Dino</td>
+      <td>디노</td>
+      <td>ディノ</td>
+      <td>Main Dancer, Rapper, Vocalist, Maknae</td>
+      <td>February 11, 1999 </td>
+    </tr>
+  </tbody>
+
+</table>
+
+
+<form action="#" method="get">
+  <fieldset>
+    <legend>Contact Me</legend>
+
+    <div class="field">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" placeholder="Kim Mingyu" required>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="mingyu@example.com" required>
+    </div>
+
+    <div class="field">
+      <label for="age">Your age</label>
+      <input type="number" id="age" name="age" min="13" max="100">
+    </div>
+
+    <fieldset>
+      <legend>Favorite group</legend>
+      <label><input type="radio" name="favorite-group" value="seventeen" checked> SEVENTEEN</label>
+      <label><input type="radio" name="favorite-group" value="ateez"> ATEEZ</label>
+      <label><input type="radio" name="favorite-group" value="cortis"> CORTIS</label>
+    </fieldset>
+
+    <div class="field">
+      <label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        Subscribe to updates
+      </label>
+    </div>
+
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" maxlength="500" placeholder="Say something..."></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+  </fieldset>
+</form>
 </body>
 </html>

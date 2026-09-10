@@ -1,0 +1,63 @@
+:root {
+  --bg: #1c1420;                    /* hex */
+  --text: rebeccapurple;            /* name */
+  --accent: rgb(232, 92, 107);      /* rgb */
+  --teal: hsl(175, 75%, 36%);       /* hsl */
+}
+
+body {
+  font-family: "Georgia", serif;           /* для текста */
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1, h2, .brand {
+  font-family: "Trebuchet MS", sans-serif; /* для заголовков — 2-е семейство */
+  font-weight: 700;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ccc;
+}
+/* element selector */
+p { line-height: 1.6; }
+
+/* class selector */
+.field { margin-bottom: 1rem; }
+
+/* ID selector — только ОДИН уникальный элемент на сайте */
+#author-name { color: var(--accent); }
+
+nav a {
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  color: #555;
+}
+nav a:hover {
+  color: var(--accent);
+  letter-spacing: 0.03em;   /* меняется не только цвет */
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.04);
+}
+th, td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #080808;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(23,163,152,0.25);
+}
+main {
+  max-width: 760px;
+  padding: 2rem 5%;      /* rem + % */
+  min-height: 70vh;      /* vh */
+}
+h1 { font-size: 2.2rem; }
+p  { line-height: 1.6em; }
+.card { border-radius: 6px; }  /* px */
